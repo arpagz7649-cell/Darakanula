@@ -11,3 +11,22 @@
     "Negara B: Tutup semua perbatasan!"
   ]
 }
+{
+  "project_name": "Darakanula",
+  "game_version": "1.0.0",
+  "story_mode": "Apocalypse",
+  "world_data": {
+    "current_phase": "Awal Kiamat",
+    "global_alert": true
+  },
+  "secret_logs": [
+    "NEGARA 1: Objek anomali terdeteksi di koordinat 0.0.",
+    "NEGARA 2: Segera tutup semua akses komunikasi!",
+    "SYSTEM: Saraf sensorik pemain terhubung."
+  ],
+  "hantu_settings": {
+    "type": "Anomali Saraf",
+    "speed": 7.5,
+    "is_aggressive": true
+  }
+}
