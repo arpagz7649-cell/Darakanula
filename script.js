@@ -1,38 +1,31 @@
-// Fungsi ini dipanggil saat tombol "MASUK KE AREA" ditekan di HTML
-function masukGame() {
-    // 1. Ubah tulisan tombol biar ada efek "loading" horor
-    const btn = document.getElementById('enter-btn');
-    btn.innerText = "MENGHUBUNGKAN...";
-    btn.style.color = "#444";
-    btn.style.borderColor = "#444";
-    btn.style.pointerEvents = "none"; // Biar gak bisa diklik 2x
+// SISTEM KONTROLER & KAMERA 3D DARAKANULA
+const gameContainer = document.body;
 
-    // 2. Simulasi menyadap jaringan (Skenario Kiamat)
-    console.log("[SYSTEM] Membuka gerbang...");
-    console.log("[INTELLIGENCE] Menyadap percakapan antar negara...");
-    console.log("[WARNING] Sinyal anomali terdeteksi di koordinatmu.");
+// Logika nengok kanan-kiri (Mouse Look)
+let mouseX = 0, mouseY = 0;
+document.addEventListener('mousemove', (e) => {
+    if (document.pointerLockElement === gameContainer) {
+        mouseX += e.movementX;
+        mouseY += e.movementY;
+        console.log(`Kamera Nengok ke X: ${mouseX}, Y: ${mouseY}`);
+        // Di sini nanti kita hubungkan ke rotasi kamera 3D
+    }
+});
 
-    // 3. Pindah layar setelah delay 2 detik (biar tegang)
-    setTimeout(() => {
-        // Sembunyikan Lobby
-        document.getElementById('lobby').style.display = 'none';
-        
-        // Munculkan Ruangan Game
-        document.getElementById('game-room').style.display = 'block';
+// Klik layar buat aktifin mode kamera game
+gameContainer.addEventListener('click', () => {
+    gameContainer.requestPointerLock();
+    console.log("Kamera Terkunci - Mode Controller Aktif");
+});
 
-        // Panggil fungsi untuk memulai simulasi
-        inisialisasiDunia();
-    }, 2000);
-}
+// Logika Jalan (Controller)
+window.addEventListener('keydown', (e) => {
+    switch(e.key.toLowerCase()) {
+        case 'w': console.log("Maju ke depan..."); break;
+        case 's': console.log("Mundur..."); break;
+        case 'a': console.log("Geser Kiri..."); break;
+        case 'd': console.log("Geser Kanan..."); break;
+    }
+});
 
-// Fungsi untuk menyiapkan dunia game setelah masuk
-function inisialisasiDunia() {
-    console.log("[SYSTEM] Area Game Dimuat. Fisika dan Biologi Aktif.");
-    
-    // Nanti di sini kita akan panggil logika Python atau mekanik Hantu-nya
-    alert("Koneksi berhasil. Kamu sekarang sendirian di area ini. Jangan menoleh ke belakang.");
-    
-    // Ubah background jadi lebih gelap pas masuk game
-    document.body.style.backgroundColor = "#020000";
-}
-
+console.log("Sistem Saraf JavaScript Siap Menjalankan C++, Go, dan Rust.");
