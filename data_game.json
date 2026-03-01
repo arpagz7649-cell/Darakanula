@@ -1,32 +1,41 @@
 {
-  "skenario": "Kiamat Fase 1",
-  "deteksi_anomali": true,
-  "hantu": {
-    "nama": "Arwah Penasaran",
-    "kecepatan": 5.5,
-    "insting_berburu": "Tinggi"
+  "info_sistem": {
+    "nama_proyek": "Darakanula",
+    "versi_engine": "1.5.0",
+    "status_dunia": "Kiamat Level 7",
+    "mesin_aktif": ["Python", "C++", "C#", "JavaScript"]
   },
-  "percakapan_rahasia": [
-    "Negara A: Terjadi kebocoran kimia.",
-    "Negara B: Tutup semua perbatasan!"
-  ]
-}
-{
-  "project_name": "Darakanula",
-  "game_version": "1.0.0",
-  "story_mode": "Apocalypse",
-  "world_data": {
-    "current_phase": "Awal Kiamat",
-    "global_alert": true
+  "sistem_biologi_pemain": {
+    "detak_jantung_awal": 80,
+    "batas_stres_saraf": 100,
+    "kondisi_mental": "Stabil",
+    "efek_kimia_udara": "Beracun ringan (Mengurangi pandangan)"
   },
-  "secret_logs": [
-    "NEGARA 1: Objek anomali terdeteksi di koordinat 0.0.",
-    "NEGARA 2: Segera tutup semua akses komunikasi!",
-    "SYSTEM: Saraf sensorik pemain terhubung."
+  "log_komunikasi_negara": [
+    "[NEGARA A]: Eksperimen kimia di Sektor 4 meledak. Evakuasi segera!",
+    "[NEGARA B]: Radar fisika kami tidak mendeteksi bentuk fisik mereka, tapi suhu ruangan turun drastis.",
+    "[NEGARA C]: Tutup semua perbatasan! Ini bukan senjata biasa, mereka langsung menyerang sistem saraf pusat korban.",
+    "[SISTEM]: Peringatan... Sinyal satelit global terputus. Anda sendirian."
   ],
-  "hantu_settings": {
-    "type": "Anomali Saraf",
-    "speed": 7.5,
-    "is_aggressive": true
+  "daftar_anomali_hantu": [
+    {
+      "id": "Entitas_01",
+      "nama": "Bayangan Elektromagnetik",
+      "tingkat_bahaya": "Tinggi",
+      "pemicu_insting": "Suara langkah kaki dan detak jantung pemain",
+      "efek_fisika": "Membuat lampu senter berkedip dan mati"
+    },
+    {
+      "id": "Entitas_02",
+      "nama": "Manipulator Pikiran",
+      "tingkat_bahaya": "Sangat Ekstrem",
+      "pemicu_insting": "Melihat pemain dalam jarak dekat",
+      "efek_biologi": "Melumpuhkan saraf motorik pemain selama 3 detik, membuat layar HP bergetar"
+    }
+  ],
+  "inventaris_awal": {
+    "alat_fisika": "Senter Kinetik (Menyala jika digoyangkan)",
+    "alat_kimia": "Suntikan Adrenalin (Menstabilkan saraf)",
+    "senjata": "Revolver Kuno (Sisa 3 Peluru)"
   }
 }
