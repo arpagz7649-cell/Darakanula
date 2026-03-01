@@ -1,0 +1,13 @@
+{
+  "skenario": "Kiamat Fase 1",
+  "deteksi_anomali": true,
+  "hantu": {
+    "nama": "Arwah Penasaran",
+    "kecepatan": 5.5,
+    "insting_berburu": "Tinggi"
+  },
+  "percakapan_rahasia": [
+    "Negara A: Terjadi kebocoran kimia.",
+    "Negara B: Tutup semua perbatasan!"
+  ]
+}
