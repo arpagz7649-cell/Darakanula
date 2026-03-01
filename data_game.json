@@ -1,41 +1,151 @@
 {
-  "info_sistem": {
-    "nama_proyek": "Darakanula",
-    "versi_engine": "1.5.0",
-    "status_dunia": "Kiamat Level 7",
-    "mesin_aktif": ["Python", "C++", "C#", "JavaScript"]
+  "database_id": "DARAKANULA_CORE_v2.0",
+  "system_status": "CRITICAL_FAILURE",
+  "world_parameters": {
+    "atmosphere": {
+      "toxicity_level": 88.5,
+      "chemical_agent": "Neurotoxin-X",
+      "oxygen_depletion_rate": 0.05,
+      "visibility_status": "Obscured"
+    },
+    "physics_anomalies": {
+      "gravity_fluctuations": true,
+      "electromagnetic_interference": "SEVERE",
+      "spatial_distortion_index": 4.2,
+      "temperature_variance_celsius": -15.4
+    },
+    "biological_threat": {
+      "mutation_stage": 4,
+      "infection_vector": "Airborne_Neural_Spores",
+      "neural_decay_rate": 12.0,
+      "host_takeover_time_seconds": 45
+    }
   },
-  "sistem_biologi_pemain": {
-    "detak_jantung_awal": 80,
-    "batas_stres_saraf": 100,
-    "kondisi_mental": "Stabil",
-    "efek_kimia_udara": "Beracun ringan (Mengurangi pandangan)"
-  },
-  "log_komunikasi_negara": [
-    "[NEGARA A]: Eksperimen kimia di Sektor 4 meledak. Evakuasi segera!",
-    "[NEGARA B]: Radar fisika kami tidak mendeteksi bentuk fisik mereka, tapi suhu ruangan turun drastis.",
-    "[NEGARA C]: Tutup semua perbatasan! Ini bukan senjata biasa, mereka langsung menyerang sistem saraf pusat korban.",
-    "[SISTEM]: Peringatan... Sinyal satelit global terputus. Anda sendirian."
-  ],
-  "daftar_anomali_hantu": [
+  "global_communications": [
     {
-      "id": "Entitas_01",
-      "nama": "Bayangan Elektromagnetik",
-      "tingkat_bahaya": "Tinggi",
-      "pemicu_insting": "Suara langkah kaki dan detak jantung pemain",
-      "efek_fisika": "Membuat lampu senter berkedip dan mati"
+      "timestamp": "00:00:00",
+      "sender": "US_CMD",
+      "message": "Radar fisika gagal. Benda itu menyerap cahaya dan gelombang elektromagnetik."
     },
     {
-      "id": "Entitas_02",
-      "nama": "Manipulator Pikiran",
-      "tingkat_bahaya": "Sangat Ekstrem",
-      "pemicu_insting": "Melihat pemain dalam jarak dekat",
-      "efek_biologi": "Melumpuhkan saraf motorik pemain selama 3 detik, membuat layar HP bergetar"
+      "timestamp": "00:05:12",
+      "sender": "RU_HQ",
+      "message": "Senjata kimia tingkat tinggi tidak mempan. Sel saraf anomali itu langsung beregenerasi!"
+    },
+    {
+      "timestamp": "00:14:30",
+      "sender": "JP_DEF",
+      "message": "Analisis biologi menunjukkan mereka tidak punya organ dalam, hanya jaringan saraf murni."
+    },
+    {
+      "timestamp": "00:22:15",
+      "sender": "UK_INTEL",
+      "message": "Tingkat ancaman ditingkatkan. Ini bukan kiamat alami, ada entitas pengatur di balik ini."
+    },
+    {
+      "timestamp": "00:35:00",
+      "sender": "ID_BASE",
+      "message": "Sistem keamanan Rust aktif. Pintu bunker utama terkunci secara hidrolik."
+    },
+    {
+      "timestamp": "00:45:11",
+      "sender": "CN_LAB",
+      "message": "Reaksi kimia di udara membuat oksigen berubah menjadi racun korosif."
+    },
+    {
+      "timestamp": "01:02:44",
+      "sender": "US_CMD",
+      "message": "Sektor 4 jatuh. Kami kehilangan kontak dengan tim ilmuwan."
+    },
+    {
+      "timestamp": "01:15:00",
+      "sender": "GLOBAL_AI",
+      "message": "PERINGATAN: Kestabilan mental komandan tersisa di bawah 20%."
+    },
+    {
+      "timestamp": "01:30:22",
+      "sender": "UNKNOWN",
+      "message": "Kalian tidak bisa lari dari evolusi."
+    },
+    {
+      "timestamp": "01:35:00",
+      "sender": "ID_BASE",
+      "message": "Sinyal diinterupsi. Siapkan sistem pertahanan pasif."
+    },
+    {
+      "timestamp": "02:00:00",
+      "sender": "GLOBAL_AI",
+      "message": "KONEKSI SATELIT TERPUTUS. BERTAHANLAH."
     }
   ],
-  "inventaris_awal": {
-    "alat_fisika": "Senter Kinetik (Menyala jika digoyangkan)",
-    "alat_kimia": "Suntikan Adrenalin (Menstabilkan saraf)",
-    "senjata": "Revolver Kuno (Sisa 3 Peluru)"
+  "anomaly_database": [
+    {
+      "id": "Liebert-01",
+      "class": "Apex_Manipulator",
+      "threat_level": "KETER",
+      "description": "Entitas tanpa wujud fisik konstan. Menyerang langsung ke psikologis dan memanipulasi ketakutan.",
+      "stats": {
+        "speed": 95,
+        "intelligence": 250,
+        "aggression": 15,
+        "stealth": 100
+      },
+      "abilities": [
+        "Psychological_Breakdown",
+        "Neural_Hijack",
+        "Auditory_Hallucination"
+      ]
+    },
+    {
+      "id": "Chem-Goulish",
+      "class": "Bio_Chemical_Mutant",
+      "threat_level": "EUCLID",
+      "description": "Terbentuk dari sisa-sisa eksperimen kimia yang gagal. Mengeluarkan gas beracun dari pori-porinya.",
+      "stats": {
+        "speed": 40,
+        "intelligence": 20,
+        "aggression": 85,
+        "stealth": 10
+      },
+      "abilities": [
+        "Toxic_Emission",
+        "Acid_Spit",
+        "Cellular_Regeneration"
+      ]
+    },
+    {
+      "id": "Phantom_Vector",
+      "class": "Physics_Anomaly",
+      "threat_level": "EUCLID",
+      "description": "Dapat menembus materi padat dengan mengubah kepadatan atom tubuhnya.",
+      "stats": {
+        "speed": 120,
+        "intelligence": 50,
+        "aggression": 60,
+        "stealth": 80
+      },
+      "abilities": [
+        "Intangibility",
+        "Kinetic_Discharge",
+        "Temperature_Drop"
+      ]
+    }
+  ],
+  "player_status": {
+    "vitals": {
+      "heart_rate_bpm": 85,
+      "blood_pressure_sys": 120,
+      "blood_pressure_dia": 80,
+      "adrenaline_level": "Normal"
+    },
+    "neurological_state": {
+      "sanity_percentage": 100,
+      "stress_level": 0,
+      "hallucination_active": false
+    },
+    "inventory_limits": {
+      "max_weight_kg": 25.5,
+      "current_weight_kg": 4.2
+    }
   }
 }
