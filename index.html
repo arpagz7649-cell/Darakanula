@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANTU - The Apocalypse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="darkness"></div>
+
+    <div id="lobby">
+        <h1 class="title">HANTU</h1>
+        <p class="warning">Skenario Kiamat: Terdeteksi Aktivitas Supranatural</p>
+        
+        <div class="menu-container">
+            <button id="enter-btn" onclick="masukGame()">MASUK KE AREA</button>
+        </div>
+
+        <div id="system-status">
+            <small>Logika Sistem: Python Active | Physics: Enabled</small>
+        </div>
+    </div>
+
+    <div id="game-room" style="display: none;">
+        <canvas id="renderCanvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
